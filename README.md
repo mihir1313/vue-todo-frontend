@@ -1,4 +1,4 @@
-# Codework-Frontend
+# Todo-Frontend
 
 This project is built with Vue 3 and integrates Vue Router for routing, Tailwind CSS for styling, and Vue Toastification for toast notifications.
 
@@ -6,9 +6,9 @@ This project is built with Vue 3 and integrates Vue Router for routing, Tailwind
 - [Getting Started](#getting-started)
 - [Prerequisites](#prerequisites)
 - [Installation](#installation)
-- [Project Structure](#project-structure)
 - [Running the Project](#running-the-project)
 - [Usage](#usage)
+- [Project Structure](#project-structure)
 
 ## Getting Started
 Follow the instructions below to set up and run the project locally.
@@ -22,33 +22,17 @@ Follow the instructions below to set up and run the project locally.
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/mihir1313/codework-frontend.git
-   cd codework-frontend
+   git clone https://github.com/mihir1313/vue-todo-frontend.git
+   cd vue-todo-frontend
 2. **Install dependencies:**
    ```bash
    npm install
 
-## Project Structure
-
-codework-frontend/
-├── public/                 # Public assets
-├── src/
-│   ├── assets/             # Assets (CSS, images, etc.)
-│   ├── components/         # Reusable Vue components
-│   ├── router/             # Vue Router setup
-│   ├── views/              # Page components
-│   ├── App.vue             # Main app component
-│   ├── main.js             # Entry file
-│   └── assets/tailwind.css # Tailwind CSS imports
-├── .gitignore
-├── package.json
-├── README.md
-└── tailwind.config.js
-
-## Running the Project
+   
+### Running the Project
 1. **Start the development server:**
    ```bash
-    npm run serve
+   npm run serve
 
 ## Usage
 1. **Vue Router:**
@@ -60,3 +44,44 @@ codework-frontend/
 3. **Vue Toastification:**
    ```bash
     For toast notifications, this project uses Vue Toastification, configured in main.js.
+
+### Project Structure
+```bash
+vue-todo-frontend/
+├── public/                         # Public assets (favicon, index.html, etc.)
+│
+├── src/                            # Main source folder for the Vue project
+│   ├── assets/                     # Global assets (images, fonts, etc.)
+│   │   └── tailwind.css            # Tailwind CSS imports
+│   │   └── login.png               # login image
+│   │   └── logo.png                # logo
+│   │   └── user.jpg                # user image
+│   │
+│   ├── components/                 # Reusable Vue components
+│   │   ├── MainHeader.vue          # Example header component
+│   │   ├── MainFooter.vue          # Example footer component
+│   │   └── MainLayout.vue          # Main layout component that wraps around pages, includes header and footer
+│   │   └── ProcessLoader.vue       # Loader component
+│   │   └── HelloWorld.vue          # Default component
+│   │ 
+│   ├── pages/                     # Reusable Vue components
+│   │   ├── LoginPage.vue          # Example header component
+│   │   ├── UserDashboard.vue      # Example footer component
+│   │   
+
+│   ├── router/                    # Vue Router setup
+│   │   └── index.js               # Routes definition
+│   │
+│   ├── views/                     # Page-level components
+│   │   ├── Home.vue               # Home page view
+│   │   └── About.vue              # About page view
+│   │
+│   ├── App.vue                    # Main app component
+│   └── main.js                    # Entry file that initializes Vue app
+│
+├── .gitignore                     # Git ignore file
+├── package.json                   # Package dependencies and scripts
+├── README.md                      # Project documentation
+└── tailwind.config.js             # Tailwind CSS configuration file.
+
+
