@@ -9,8 +9,6 @@ This project is built with Vue 3 and integrates Vue Router for routing, Tailwind
 - [Project Structure](#project-structure)
 - [Running the Project](#running-the-project)
 - [Usage](#usage)
-- [Customize Configuration](#customize-configuration)
-- [License](#license)
 
 ## Getting Started
 Follow the instructions below to set up and run the project locally.
